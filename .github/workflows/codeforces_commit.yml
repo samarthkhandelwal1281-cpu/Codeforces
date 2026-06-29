@@ -4,7 +4,8 @@ on:
   # schedule:
   #   - cron: "*/15 * * * *"  # Disabled auto-run
   workflow_dispatch:  # ✅ Only runs manually
-
+env:
+  CF_HANDLE: https://codeforces.com/profile/Samarthkh_17
 jobs:
   fetch-and-commit:
     if: false  # 🚫 Prevent job from running at all
